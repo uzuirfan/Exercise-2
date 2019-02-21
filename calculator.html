@@ -1,0 +1,58 @@
+<html>
+    
+<head>
+
+<TItle>Kalkulator ku</TItle>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style type="text/css">
+
+    h1{
+        text-align: center; background-color: chocolate;
+    }
+    #satu{
+				color:darkgreen;
+                font-family: serif;
+                
+			}
+    
+</style>
+
+</head>
+
+<body bgcolor="orange">
+
+    <h1 id="satu">..::Kalkulator Sederhana::..</h1>
+
+
+
+
+
+<script language="javascript">
+function hasil(aritmatika){
+var bil1=parseFloat(document.ffrom.bil1.value);
+var bil2=parseFloat(document.ffrom.bil2.value);
+switch(aritmatika){
+ case 1: var jumlah=bil1+bil2;break;
+ case 2: var jumlah=bil1-bil2;break;
+ case 3: var jumlah=bil1/bil2;break;
+ case 4: var jumlah=bil1*bil2;break;
+}
+alert("Hasilnya adalah "+jumlah);
+}
+</script>
+<form align="center" name="ffrom">
+<pre>
+ <input type="text"name="bil1"placeholder="Masukan bilangan 1">
+ <input type="text"name="bil2"placeholder="Masukan bilangan2">
+ </pre>
+ <input type="button"value="+"onclick="hasil(1)">
+ <input type="button"value="-"onclick="hasil(2)">
+ <input type="button"value="/"onclick="hasil(3)">
+ <input type="button"value="*"onclick="hasil(4)">
+ <input type="reset"value="reset">
+</form>
+
+
+</body>
+
+</html>
